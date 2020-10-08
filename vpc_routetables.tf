@@ -11,7 +11,7 @@ resource "aws_route_table" "rtb_dmz" {
 		gateway_id = "${aws_internet_gateway.igw_main.id}"
 	}
 
-	tags {
+	tags = {
 		Name = "RTB-DMZ"
 	}
 
@@ -46,7 +46,7 @@ resource "aws_route_table" "rtb_pvt_az1" {
 		gateway_id = "${aws_nat_gateway.natgw_az1.id}"
 	}
 
-	tags {
+	tags = {
 		Name = "RTB-PVT-AZ1"
 	}
 
@@ -74,7 +74,7 @@ resource "aws_route_table" "rtb_pvt_az2" {
 		gateway_id = "${aws_nat_gateway.natgw_az2.id}"
 	}
 
-	tags {
+	tags = {
 		Name = "RTB-PVT-AZ2"
 	}
 

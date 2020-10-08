@@ -9,7 +9,7 @@ resource "aws_vpc" "vpc_myapp" {
 	enable_dns_support = true
 	enable_dns_hostnames = true
 
-	tags {
+	tags = {
 		Name = "VPC-MYAPP"
 	}
 
@@ -23,7 +23,7 @@ resource "aws_internet_gateway" "igw_main" {
 
 	vpc_id = "${aws_vpc.vpc_myapp.id}"
 
-	tags {
+	tags = {
 		Name = "IGW-MYAPP"
 	}
 

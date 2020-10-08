@@ -9,7 +9,7 @@ resource "aws_subnet" "subnet_dmz_az1" {
 	cidr_block = "${var.subnet_dmz_cidr_az1}"
 	map_public_ip_on_launch = true
 
-	tags {
+	tags = {
 		Name = "SUBNET-DMZ-AZ1"
 	}
 
@@ -26,7 +26,7 @@ resource "aws_subnet" "subnet_dmz_az2" {
 	cidr_block = "${var.subnet_dmz_cidr_az2}"
 	map_public_ip_on_launch = true	
 
-	tags {
+	tags = {
 		Name = "SUBNET-DMZ-AZ2"
 	}
 
@@ -43,7 +43,7 @@ resource "aws_subnet" "subnet_priv_az1" {
 	cidr_block = "${var.subnet_priv_cidr_az1}"
 	map_public_ip_on_launch = false
 
-	tags {
+	tags = {
 		Name = "SUBNET-PRIV-AZ1"
 	}
 
@@ -60,7 +60,7 @@ resource "aws_subnet" "subnet_priv_az2" {
 	cidr_block = "${var.subnet_priv_cidr_az2}"
 	map_public_ip_on_launch = false	
 
-	tags {
+	tags = {
 		Name = "SUBNET-PRIV-AZ2"
 	}
 	

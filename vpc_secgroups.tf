@@ -24,7 +24,7 @@ resource "aws_security_group" "secgroup_adwriter" {
 		cidr_blocks = ["0.0.0.0/0"]
 	}
 
-	tags {
+	tags = {
 		Name = "SECGROUP-ADWRITER"
 	}
 

@@ -17,7 +17,7 @@ resource "aws_instance" "vm_adwriter" {
 		delete_on_termination = true
 	}
 	monitoring = true
-	tags {
+	tags = {
 		Name = "ADWRITER"
 	}
 }

@@ -1,11 +1,11 @@
 # AWS credentials
 provider_aws_access_key = "access_key_here"
 provider_aws_secret_key = "secret_key_here"
-provider_aws_zone = "ap-southeast-1"
+provider_aws_zone = "us-west-1"
 
 # Availability zones
-az1 = "ap-southeast-1a"
-az2 = "ap-southeast-1b"
+az1 = "us-west-1a"
+az2 = "us-west-1b"
 
 # VPC
 vpc_cidr = "10.1.0.0/16"
